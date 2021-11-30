@@ -1,20 +1,25 @@
-######################################################
-#                                                    #
-#                   INICIACIÓN A R                   #
-#                                                    #
-# Seminario del máster en Humanidades Digitales UNIR #
-#                                                    #
-#######################################################
+########################################################
+########################################################
+##                                                    ##
+##                   INICIACIÓN A R                   ##
+##                                                    ##
+## Seminario del máster en Humanidades Digitales UNIR ##
+##                     Script  1                      ##
+##                                                    ##
+########################################################
+########################################################
 
 # Algunas funciones básicas de R
 
 # Funciones matemáticas en R
+# Operadores: =, <-, ==, +, etc.
 
 1 + 1
 10-5
 10 * 4532
 45320 / 10
 10 * pi
+
 # Raíz cuadrada
 sqrt(144)
 #Para las potencias
@@ -28,13 +33,6 @@ round(1.8)
 10:100
 
 # ¿Qué pasa si tecleas una orden incompleta como 3-?
-
-# Imprime
-print("HELLO WORLD!")
-
-# Para acceder a la documentación
-help()
-help(sqrt)
 
 #Crear variables
 x = 10
@@ -53,5 +51,56 @@ x
 y
 z = x + y
 z
+
+y == x        # Comparar x con y. "==" (igualdad) "!=" (desigualdad)
+
+# Creo variables con texto
+
 k = "HELLO WORLD!"
-print(k)
+
+VariableMicrorrelato = "Cuando despertó, el dinosaurio todavía estaba allí"
+
+# Función en R
+
+print(k) # imprimir en pantalla la variable
+print("HELLO WORLD!")
+
+nchar(VariableMicrorrelato) #contar el número de caracteres
+
+# Para acceder a la documentación
+help()
+help(sqrt)
+
+#Lista de variables
+ls()
+
+#Eliminar una variable
+rm(z)
+
+# Directorio de trabajo
+
+# Crear un directorio de trabajo
+
+# Para Windows
+dir.create("C:/seminarioR")
+#Para Mac
+dir.create("Desktop/seminarioR")
+
+# Fijar el directorio de trabajo
+
+# En Windows
+setwd("C:/seminarioR") # ruta donde están los archivos con los que quiero trabajar
+
+#En Mac
+setwd("Desktop/seminarioR") # ruta donde están los archivos con los que quiero trabajar
+
+# Para saber en qué directorio estoy
+
+getwd()
+
+#################################################################
+#               Ejercicio1:                                     #
+# Si a vale 546 y b vale 328, ¿la suma de ambos es igual a 844? #
+#            Debes llegar hasta TRUE                            #
+# Cuenta el número de caracteres de "HELLO WORLD!"              #
+#################################################################
