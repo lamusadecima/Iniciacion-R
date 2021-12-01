@@ -12,7 +12,7 @@
 # Algunas funciones y comandos vienen por defecto en R,
 # pero la mayoría hay que instalarlos:
 
-# Instalar paquetes
+# Instalar paquetes (solo la primera vez)
 install.packages("tokenizers")
 install.packages("tidyverse")
 install.packages("tidytext")
