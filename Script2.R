@@ -66,11 +66,16 @@ poema <- tibble(línea = seq_along(soneto),
                   verso = soneto)
 poema
 length(poema)
+# Número de filas
 nrow(poema)
 class(poema)
+
+# Extraigo las palabras
 poema_palabras <- poema %>%
   unnest_tokens(palabra, verso)
 poema_palabras
+
+# PALABRAS TIPO Y PALABRAS TOKENS #
 
 # ¿Cuántas palabras tipo hay?
 poema_palabras %>%
@@ -100,6 +105,8 @@ poema_palabras_con_caracteres %>%
 poema_palabras_con_caracteres %>%
   count(NumLetras, sort = TRUE)
 
+# FRECUENCIA ABSOLUTA Y FRECUENCIA RELATIVA #
+
 # Calculamos las frecuencias relativas en tantos por mil
 
 poema_frecuencias <- poema_palabras %>%
@@ -107,6 +114,8 @@ poema_frecuencias <- poema_palabras %>%
   mutate(relativa = 1000 * (n / sum(n))) 
 
 poema_frecuencias
+
+# PALABRAS GRAMATICALES #
 
 # Filtrar las palabras vacías
 

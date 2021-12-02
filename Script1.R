@@ -98,6 +98,9 @@ setwd("Desktop/seminarioR") # ruta donde están los archivos con los que quiero 
 
 getwd()
 
+# Coloca dentro de la carpeta "seminarioR" que acabas de crear
+# los documentos txt que has descargado de GitHub
+
 #################################################################
 #               Ejercicio1:                                     #
 # Si a vale 546 y b vale 328, ¿la suma de ambos es igual a 844? #
