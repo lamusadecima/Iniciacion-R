@@ -3,7 +3,6 @@
 ##                                                    ##
 ##                   INICIACIÓN A R                   ##
 ##                                                    ##
-## Seminario del máster en Humanidades Digitales UNIR ##
 ##                     Script  3                      ##
 ##                                                    ##
 ########################################################
